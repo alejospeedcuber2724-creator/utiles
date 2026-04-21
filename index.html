@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>útiles.com - Tienda de Útiles Escolares</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f4f6fb}
+header{background:#2b7cff;color:white;padding:25px;text-align:center}
+nav{background:#1f5fd1;padding:12px;text-align:center}
+nav a{color:white;margin:0 15px;text-decoration:none;font-weight:bold}
+.container{padding:30px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px}
+.card{background:white;border-radius:12px;padding:18px;box-shadow:0 3px 10px rgba(0,0,0,0.1);text-align:center;transition:transform .2s}
+.card:hover{transform:scale(1.05)}
+.card img{width:90px;height:90px;object-fit:contain}
+h2{margin-top:40px}
+button{background:#2b7cff;color:white;border:none;padding:10px 14px;border-radius:6px;cursor:pointer}
+button:hover{background:#1f5fd1}
+footer{background:#222;color:white;text-align:center;padding:15px;margin-top:40px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>útiles.com</h1>
+<p>La tienda online para estudiantes</p>
+</header>
+
+<nav>
+<a href="#">Inicio</a>
+<a href="#productos">Productos</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+<div class="container" id="productos">
+
+<h2>✏️ Escritura</h2>
+<div class="products">
+<div class="card"><img src="img/lapiz.jpg"><h3>Lápiz</h3><p>S/1.00</p><button onclick="comprar('Lápiz')">Comprar</button></div>
+<div class="card"><img src="img/lapicero.png"><h3>Lapicero</h3><p>S/1.50</p><button onclick="comprar('Lapicero')">Comprar</button></div>
+<div class="card"><img src="img/portaminas.jpg"><h3>Portaminas</h3><p>S/3.00</p><button onclick="comprar('Portaminas')">Comprar</button></div>
+<div class="card"><img src="img/marcadores.png"><h3>Marcador</h3><p>S/2.50</p><button onclick="comprar('Marcador')">Comprar</button></div>
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/686/686589.png"><h3>Plumón</h3><p>S/3.50</p><button onclick="comprar('Plumón')">Comprar</button></div>
+</div>
+
+<h2>📐 Geometría</h2>
+<div class="products">
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/2913/2913465.png"><h3>Regla</h3><p>S/2.00</p><button onclick="comprar('Regla')">Comprar</button></div>
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/1995/1995574.png"><h3>Escuadra</h3><p>S/3.00</p><button onclick="comprar('Escuadra')">Comprar</button></div>
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/481/481874.png"><h3>Transportador</h3><p>S/2.80</p><button onclick="comprar('Transportador')">Comprar</button></div>
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/3039/3039394.png"><h3>Compás</h3><p>S/6.00</p><button onclick="comprar('Compás')">Comprar</button></div>
+</div>
+
+<h2>🧽 Corrección</h2>
+<div class="products">
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"><h3>Borrador</h3><p>S/1.00</p><button onclick="comprar('Borrador')">Comprar</button></div>
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/565/565547.png"><h3>Corrector</h3><p>S/2.50</p><button onclick="comprar('Corrector')">Comprar</button></div>
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/921/921347.png"><h3>Cinta Correctora</h3><p>S/3.00</p><button onclick="comprar('Cinta Correctora')">Comprar</button></div>
+</div>
+
+<h2>✂️ Manualidades</h2>
+<div class="products">
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/709/709496.png"><h3>Tijeras</h3><p>S/4.00</p><button onclick="comprar('Tijeras')">Comprar</button></div>
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/3523/3523063.png"><h3>Pegamento</h3><p>S/2.20</p><button onclick="comprar('Pegamento')">Comprar</button></div>
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/1040/1040230.png"><h3>Cinta Adhesiva</h3><p>S/2.00</p><button onclick="comprar('Cinta Adhesiva')">Comprar</button></div>
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/2541/2541988.png"><h3>Cartulina</h3><p>S/1.80</p><button onclick="comprar('Cartulina')">Comprar</button></div>
+</div>
+
+<h2>📚 Cuadernos y papel</h2>
+<div class="products">
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/2997/2997933.png"><h3>Cuaderno</h3><p>S/6.00</p><button onclick="comprar('Cuaderno')">Comprar</button></div>
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/337/337946.png"><h3>Agenda</h3><p>S/8.00</p><button onclick="comprar('Agenda')">Comprar</button></div>
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png"><h3>Block de dibujo</h3><p>S/7.00</p><button onclick="comprar('Block de dibujo')">Comprar</button></div>
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png"><h3>Hojas</h3><p>S/5.00</p><button onclick="comprar('Hojas')">Comprar</button></div>
+</div>
+
+<h2>🎨 Arte</h2>
+<div class="products">
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/809/809957.png"><h3>Colores</h3><p>S/9.00</p><button onclick="comprar('Colores')">Comprar</button></div>
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/3468/3468371.png"><h3>Crayones</h3><p>S/6.00</p><button onclick="comprar('Crayones')">Comprar</button></div>
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/2972/2972474.png"><h3>Acuarelas</h3><p>S/12.00</p><button onclick="comprar('Acuarelas')">Comprar</button></div>
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/135/135620.png"><h3>Pinceles</h3><p>S/5.00</p><button onclick="comprar('Pinceles')">Comprar</button></div>
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/3448/3448611.png"><h3>Témperas</h3><p>S/10.00</p><button onclick="comprar('Témperas')">Comprar</button></div>
+</div>
+
+<h2>🎒 Otros útiles</h2>
+<div class="products">
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/1046/1046876.png"><h3>Mochila</h3><p>S/45.00</p><button onclick="comprar('Mochila')">Comprar</button></div>
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png"><h3>Cartuchera</h3><p>S/12.00</p><button onclick="comprar('Cartuchera')">Comprar</button></div>
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/1040/1040235.png"><h3>Carpeta</h3><p>S/4.50</p><button onclick="comprar('Carpeta')">Comprar</button></div>
+<div class="card"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png"><h3>Archivador</h3><p>S/7.50</p><button onclick="comprar('Archivador')">Comprar</button></div>
+</div>
+
+</div>
+
+<footer id="contacto">
+<p>© 2026 útiles.com | Tienda de útiles escolares para estudiantes</p>
+</footer>
+
+<script>
+let carrito = []
+function comprar(producto){
+carrito.push(producto)
+alert(producto + " fue agregado al carrito 🛒")
+}
+</script>
+
+</body>
+</html>
